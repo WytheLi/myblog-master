@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'blog',
     'xadmin',
     'crispy_forms',
+    'mdeditor',  # Markdown 编辑器
 ]
 
 MIDDLEWARE = [

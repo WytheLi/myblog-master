@@ -161,6 +161,14 @@ class Detail(View):
 
     def get(self, request, pk):
         article = get_object_or_404(Blog, id=pk)
+        # # 对博客内容进行 markdown渲染
+        # # 自定义的custom_markdown过滤器实现
+        # article.content = markdown.markdown(article.content,
+        #                               extensions=[
+        #                                   'markdown.extensions.extra',  # 用于标题、表格、引用这些基本转换
+        #                                   'markdown.extensions.codehilite',  # 用于语法高亮
+        #                                   'markdown.extensions.toc',    # 用于生成目录
+        #                               ])
         return render(request, 'detail.html', {
             'article': article,
             'source_id': article.id,

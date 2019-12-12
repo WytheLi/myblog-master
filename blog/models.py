@@ -5,6 +5,7 @@ from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+from mdeditor.fields import MDTextField
 
 # Create your models here.
 
@@ -48,7 +49,8 @@ class Blog(models.Model):
     title = models.CharField(verbose_name='博客文章', max_length=50,default='')
     category = models.ForeignKey(Category,on_delete=models.CASCADE,null=True,verbose_name='文章分类')
     author = models.ForeignKey(User,on_delete=models.CASCADE,null=True,verbose_name='作者')
-    content = models.TextField(verbose_name='内容')
+    # content = models.TextField(verbose_name='内容')
+    content = MDTextField(verbose_name='内容')
     digest = models.TextField(verbose_name='摘要',default='')
     add_time = models.DateTimeField(verbose_name='创建时间',default=datetime.now)
     edit_time = models.DateTimeField(verbose_name='更新时间',default=datetime.now)

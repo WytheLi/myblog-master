@@ -31,7 +31,9 @@ def slice_list(value, index):
 @stringfilter
 def custom_markdown(value):
     content = mark_safe(markdown.markdown(value, extensions=['markdown.extensions.fenced_code',
-                                                             # 'markdown.extensions.codehilite',
+                                                             'markdown.extensions.codehilite',  # 用于语法高亮
+                                                             'markdown.extensions.extra',  # 用于标题、表格、引用这些基本转换
+                                                             'markdown.extensions.toc',  # 用于生成目录
                                                              'markdown.extensions.tables'],
                                           safe_mode=True, enable_attributes=False))
 
