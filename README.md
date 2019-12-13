@@ -27,10 +27,25 @@
     ```
     - nginx代理服务器启动
         ```sh
-        /usr/sbin/nginx -c /etc/nginx/nginx.conf
+        service nginx start
         ```
     - nginx代理服务器的重启
         ```sh
         /usr/sbin/nginx -s reload
+        # or
+        service nginx restart
         ```
-        
+    - nginx相关文件
+        ```sh
+        # 配置文件
+        /etc/nginx/nginx.conf
+        # 日志文件
+        /var/log/nginx/
+        ```
+#### 静态文件请求地址
+```
+http://127.0.0.1:8000/static/js/album.js
+
+# admin
+http://127.0.0.1:8000/static/xadmin/js/xadmin.plugin.themes.js
+```
