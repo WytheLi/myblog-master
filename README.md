@@ -42,6 +42,32 @@
         # 日志文件
         /var/log/nginx/
         ```
+    - nginx配置内容
+    ```conf
+        # blog
+        upstream blog {
+                server 127.0.0.1:8000;
+        }
+
+        server {
+                listen  80;
+                server_name 47.101.37.196 blog.zoevan.work;
+
+                location /static {
+                        alias /root/blog/myblog-master/static;
+                        index index.html index.htm;
+                }
+
+
+                location / {
+                        include /etc/nginx/uwsgi_params;
+                        uwsgi_pass blog;
+                }
+
+                error_page 500 502 503 504 /50x.html;
+        }
+
+    ```
 #### 静态文件请求地址
 ```
 http://127.0.0.1:8000/static/js/album.js

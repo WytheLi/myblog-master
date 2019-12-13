@@ -18,6 +18,9 @@ pip install https://github.com/sshwsfc/xadmin/tarball/master
     - nginx服务器 域名blog.zoevan.work 端口80
         1. 作为代理服务器，将请求转发到uwsgi
         2. 作为静态服务器，提供css、js静态文件的加载
+- 域名备案 网络备案号的获取
+- 后台登录时跨域问题 csrf的解决
 - 印象笔记 notes笔记迁移、浏览器收藏夹博客迁移， 编辑发布
+- 畅言评论区 打赏区域二维码
 
 
