@@ -23,4 +23,6 @@ pip install https://github.com/sshwsfc/xadmin/tarball/master
 - 印象笔记 notes笔记迁移、浏览器收藏夹博客迁移， 编辑发布
 - 畅言评论区 打赏区域二维码
 
+- boss上简历更新
+
 
