@@ -57,7 +57,11 @@
                         alias /root/blog/myblog-master/static;
                         index index.html index.htm;
                 }
-
+                
+                location /media {
+                        alias /root/blog/myblog-master/media;
+                        index index.html index.htm;
+                }
 
                 location / {
                         include /etc/nginx/uwsgi_params;
