@@ -139,8 +139,7 @@ STATIC_URL = '/static/'
 
 # 配置用户上传的文件
 MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 需要配置TEMPLATES
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')  # 需要配置TEMPLATES
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 需要配置TEMPLATES
 
 
 # UserProfile 覆盖了 django 内置的 users 表
