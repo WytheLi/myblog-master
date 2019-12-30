@@ -75,3 +75,14 @@ http://127.0.0.1:8000/static/js/album.js
 # admin
 http://127.0.0.1:8000/static/xadmin/js/xadmin.plugin.themes.js
 ```
+
+#### 数据库的迁移
+```sh
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+#### 管理员用户的创建
+```sh
+python3 manage.py createsuperuser
+```

@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 SECRET_KEY = '%oyd37a)%mh0@zts7b)ki5f1u(ibiw9z%6w9-khmz^gvrd+3&2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -86,10 +86,12 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myblog',
+        'NAME': 'blog',
         'USER':'root',
-        'PASSWORD': 'mysql',  # 请换成自己的密码
-        'HOST': '47.101.37.196',   # 如果不能连接，改成localhost试下
+        # 'PASSWORD': 'mysql',
+        # 'HOST': '47.101.37.196',
+        'PASSWORD': 'Meanergy168',
+        'HOST': '127.0.0.1',
         'POST': '3306',
     }
 }
