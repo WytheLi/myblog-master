@@ -134,8 +134,7 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 
 # 配置用户上传的文件
@@ -146,3 +145,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 需要配置TEMPLATES
 # UserProfile 覆盖了 django 内置的 users 表
 AUTH_USER_MODEL = 'blog.User'
 
+
+# 收集静态文件的保存目录
+# python3 manage.py collectstatic
+# 需要注释STATICFILES_DIRS
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/collection')

@@ -86,3 +86,8 @@ python3 manage.py migrate
 ```sh
 python3 manage.py createsuperuser
 ```
+
+#### 收集静态文件
+```sh
+python3 manage.py collectstatic
+```
