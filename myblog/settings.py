@@ -89,8 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blog',
         'USER': 'root',
-        'PASSWORD': 'vivi1911',    # 线上mysql 密码
-        # 'PASSWORD': 'Meanergy168',    # 本地ubuntu mysql密码
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'POST': '3306',
     }
