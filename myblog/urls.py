@@ -27,6 +27,7 @@ urlpatterns = [
 
     path('',Index.as_view(),name='index'),
     path('blog/', include(('blog.urls', 'blog'), namespace='blog')),
+    path(r'mdeditor/', include('mdeditor.urls')),
 
 ]
 

@@ -95,3 +95,6 @@ python3 manage.py createsuperuser
 ```sh
 python3 manage.py collectstatic
 ```
+
+#### 参考文献
+- [富文本插件 mdeditor 图片上传配置](https://www.jianshu.com/p/08b758cef67e)
